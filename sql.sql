@@ -9,9 +9,9 @@ CREATE TABLE produtos (
 
 INSERT INTO produtos (titulo, data_Cadastro, preco, descricao, imagem)
 VALUES
-    ('John Doe', 25, 'NY'),
-    ('Jane Smith', 30, 'CA'),
-    ('Michael Johnson', 35, 'TX'),
+    ('Serum Menoderm Menopausa Payot', R$134,90, ''),
+    ('Upderme', R$84,90, 'CA'),
+    ('Base Mate Boca Rosa Beauty By Payot', R$66,90, 'TX'),
     ('Emily Davis', 28, 'FL'),
     ('Robert Brown', 32, 'OH'),
     ('Sophia Wilson', 27, 'IL'),
