@@ -9,24 +9,30 @@ CREATE TABLE produtos (
 
 INSERT INTO produtos (titulo, data_Cadastro, preco, descricao, imagem)
 VALUES
-    ('Serum Menoderm Menopausa Payot', 'R$134,90', ''),
-    ('Upderme Hialurônico Payot', 'R$84 R,90', 'CA'),
-    ('Hidratante Facial Payot Diurno fps 30', 'R$99,90', 'MI'),
-    ('Creme Anti Estrias Maternité Plus Payout', 'R$66,90', 'NC'),
-    ('Sabonete Facial Retinol Payot', 'R$37,90', 'MI'),
-    ('Loção Tônica Estabilizante Acnederm Payout 220ml', 'R$35,91', 'NC'),
-    ('Primer Hidra Boost Payot', 'R$52,11', 'GA'),
-    ('Base Mate Boca Rosa Beauty By Payot', 'R$66,90', 'TX'),
-    ('Delineador Liquido Boca Rosa By Payot Glam Line Peace', 'R$18,97', 'FL'),
-    ('Paleta Trio Boca Rosa Beauty By Payot', 'R$53,94', 'OH'),
-    ('Lip Tint Boca Rosa', 'R$44,96', 'IL'),
-    ('Blush Retinol Rosa Iluminado', 'R$47,90', 'PA'),
-    ('Mascara de Cilios Payot 5 em 1 a Prova Dagua', 'R$66,90', 'GA'),
-    ('Pó Facial Retinol Translucido Matte', 'R$57,90', 'GA'),
-    ('Paleta de Contorno Boca Rosa Beauty', 'R$79,90', 'GA'),
-    ('Corretivo Liq. B.Rosa Beauty By Payot 2-Peonia', 'R$52,90', 'GA'),
-    ('Batom Mate Brownie Payot', 'R$9,80', 'GA'),
-    ('Lápis de Olho Preto', 'R$33,90', 'GA'),
-    ('Gloss Boca Rosa', 'R$42,90', 'GA'),
-    ('Paleta de Sombras Boca Rosa', 'R$84,90', 'GA'),
+    ('Serum Menoderm Menopausa Payot', '2023/04/18', 'R$134,90', ''),
+    ('Upderme Hialurônico Payot', '2023/03/05', 'R$84,90', 'CA'),
+    ('Hidratante Facial Payot Diurno fps 30', '2022/06/01', 'R$99,90', 'MI'),
+    ('Creme Anti Estrias Maternité Plus Payout', '2021/11/23', 'R$66,90', 'NC'),
+    ('Sabonete Facial Retinol Payot', '2023/01/02', 'R$37,90', 'MI'),
+    ('Loção Tônica Estabilizante Acnederm Payout 220ml', '2023/05/07', 'R$35,91', 'NC'),
+    ('Primer Hidra Boost Payot', '2021/08/08', 'R$52,11', 'GA'),
+    ('Base Mate Boca Rosa Beauty By Payot', '2021/02/15', 'R$66,90', 'TX'),
+    ('Delineador Liquido Boca Rosa By Payot Glam Line Peace', '2020/07/09', 'R$18,97', 'FL'),
+    ('Paleta Trio Boca Rosa Beauty By Payot', '2022/10/19', 'R$53,94', 'OH'),
+    ('Lip Tint Boca Rosa', '2023/05/18', 'R$44,96', 'IL'),
+    ('Blush Retinol Rosa Iluminado', '2021/12/25', 'R$47,90', 'PA'),
+    ('Mascara de Cilios Payot 5 em 1 a Prova Dagua', '2023/03/04', 'R$66,90', 'GA'),
+    ('Pó Facial Retinol Translucido Matte', '2022/06/29', 'R$57,90', 'GA'),
+    ('Paleta de Contorno Boca Rosa Beauty', '2020/09/02', 'R$79,90', 'GA'),
+    ('Corretivo Liq. B.Rosa Beauty By Payot 2-Peonia', '2019/07/27', 'R$52,90', 'GA'),
+    ('Batom Mate Brownie Payot', 'R$9,80', '2020/11/07', 'GA'),
+    ('Lápis de Olho Preto', '2019/05/28', 'R$33,90', 'GA'),
+    ('Gloss Boca Rosa', '2021/09/17', 'R$42,90', 'GA'),
+    ('Paleta de Sombras Boca Rosa', '2023/01/31', 'R$84,90', 'GA');
+
+SELECT * FROM produto
+
+SELECT * FROM produto WHERE id = ?
+
+DELETE FROM produto WHERE id = ?
     
