@@ -9,8 +9,8 @@ CREATE TABLE produtos (
 
 INSERT INTO produtos (titulo, data_Cadastro, preco, descricao, imagem)
 VALUES
-    ('Serum Menoderm Menopausa Payot', '2023/04/18', 'R$134,90', ''),
-    ('Upderme Hialurônico Payot', '2023/03/05', 'R$84,90', 'CA'),
+    ('Serum Menoderm Menopausa Payot', '2023/04/18', 'R$134,90', 'Foi especialmente desenvolvido para suavizar os efeitos que as mudanças hormonais causam na pele.'),
+    ('Upderme Hialurônico Payot', '2023/03/05', 'R$84,90', 'É um serum desenvolvido com avançada tecnologia para o tratamento da pele, com eficácia, segurança e efeitos visíveis.'),
     ('Hidratante Facial Payot Diurno fps 30', '2022/06/01', 'R$99,90', 'MI'),
     ('Creme Anti Estrias Maternité Plus Payout', '2021/11/23', 'R$66,90', 'NC'),
     ('Sabonete Facial Retinol Payot', '2023/01/02', 'R$37,90', 'MI'),
