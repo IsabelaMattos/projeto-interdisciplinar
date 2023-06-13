@@ -12,27 +12,27 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/produtos', async function(req, res){
+app.get('/produto', async function(req, res){
   try {
-    var produtos = await Produto.select();
-    res.json(produtos.rows);
+    var produto = await Produto.select();
+    res.json(produto.rows);
   } catch (error) {
     console.error('Erro ao buscar produtos:', error);
     res.status(500).json({ error: 'Ocorreu um erro ao buscar produtos' });
   }
 });
 
-app.post('/produtos', async function(req, res){
+app.post('/produto', async function(req, res){
   try {
-    var produto = await Produtos.insert(req.body);
-    res.json(produtos.rows);
+    var produto = await Produto.insert(req.body);
+    res.json(produto.rows);
   } catch (error) {
-    console.error('Erro ao inserir produto:', error);
-    res.status(500).json({ error: 'Ocorreu um erro ao buscar produto' });
+    console.error('Erro ao inserir produtos:', error);
+    res.status(500).json({ error: 'Ocorreu um erro ao buscar produtos' });
   }
 });
 
-app.put('/produtos', async function(req, res){
+app.put('/produto', async function(req, res){
   try {
     var produto = await Produto.update(req.body.id, req.body);
     res.json(produto.rows);
