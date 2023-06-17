@@ -1,8 +1,10 @@
 const express = require('express');
 const path = require('path');
 const Produto = require("./models/produto");
+const cors = require("cors")
 
 const app = express();
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -32,6 +34,16 @@ app.post('/produto', async function(req, res){
   }
 });
 
+app.post('/produtos', async function(req, res){
+  try {
+    var produto = await Produto.selectOne(req.body.id);
+    res.json(produto.rows[0]);
+  } catch (error) {
+    console.error('Erro ao buscar produtos:', error);
+    res.status(500).json({ error: 'Ocorreu um erro ao buscar produto' });
+  }
+});
+
 app.put('/produto', async function(req, res){
   try {
     var produto = await Produto.update(req.body.id, req.body);
@@ -42,7 +54,7 @@ app.put('/produto', async function(req, res){
   }
 });
 
-app.delete('/produtos', async function(req, res){
+app.delete('/produto', async function(req, res){
   try {
     var produto = await Produto.delete(req.body.id);
     res.json(produto.rows);
