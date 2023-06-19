@@ -26,6 +26,7 @@ app.get('/produto', async function(req, res){
 
 app.post('/produto', async function(req, res){
   try {
+    console.log(req.body.titulo)
     var produto = await Produto.insert(req.body);
     res.json(produto.rows);
   } catch (error) {
